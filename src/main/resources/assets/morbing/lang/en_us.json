@@ -1,3 +1,7 @@
 {
-  "effect.morbing.morbingtime": "Morbing"
+  "effect.morbing.morbingtime": "Morbing",
+  "item.morbing.morbarrow": "Empty Morbing Syringe",
+  "item.morbing.morbsyringe": "Filled Morbing Syringe",
+  "tooltip.morbing.morbyringe": "It's Morbing Time!",
+  "subtitles.morbing.itsmorbintime": "It's Morbing Time!"
 }

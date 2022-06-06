@@ -3,8 +3,10 @@
   "package": "moe.nea.morbing.mixin",
   "compatibilityLevel": "JAVA_16",
   "client": [
+	"MixinAbstractClientPlayerEntity"
   ],
   "mixins": [
+	"AccessorBrewingRecipeRegistry"
   ],
   "injectors": {
 	"defaultRequire": 1

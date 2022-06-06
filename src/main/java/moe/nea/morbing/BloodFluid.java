@@ -74,7 +74,7 @@ public abstract class BloodFluid extends FlowableFluid {
         BlockPos abovePos = pos.up();
         BlockState aboveState = world.getBlockState(abovePos);
         FluidState aboveFluid = aboveState.getFluidState();
-        if (state.getFluidState().getFluid() != this && !aboveFluid.isEmpty() && matchesType(aboveFluid.getFluid())) {
+        if (state.getFluidState().isEmpty() && !aboveFluid.isEmpty() && matchesType(aboveFluid.getFluid())) {
             return getFlowing(aboveFluid.getLevel(), true);
         }
         if (state.getFluidState().getFluid() == getFlowing()) {
@@ -85,6 +85,9 @@ public abstract class BloodFluid extends FlowableFluid {
                     return Fluids.EMPTY.getDefaultState();
                 return getFlowing(1, false);
             }
+        }
+        if (state.getFluidState().getFluid() == getStill()) {
+            return getFlowing(1, false);
         }
         return state.getFluidState();
     }

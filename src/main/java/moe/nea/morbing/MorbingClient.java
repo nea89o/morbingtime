@@ -18,6 +18,5 @@ public class MorbingClient implements ClientModInitializer {
         ));
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), Morbing.STILL_BLOOD, Morbing.FLOWING_BLOOD);
         EntityRendererRegistry.register(ModEntities.INSTANCE.morbArrowEntityEntityType, MorbArrowEntityRenderer::new);
-
     }
 }

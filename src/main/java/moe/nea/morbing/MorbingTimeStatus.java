@@ -8,4 +8,5 @@ public class MorbingTimeStatus extends StatusEffect {
         super(StatusEffectCategory.NEUTRAL, 0x10_10_10);
     }
 
+    public static MorbingTimeStatus INSTANCE = new MorbingTimeStatus();
 }
